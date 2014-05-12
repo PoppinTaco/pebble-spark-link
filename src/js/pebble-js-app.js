@@ -9,10 +9,10 @@ var importjQuery = function() {
 };
 
 Pebble.addEventListener("ready",
-    function(e) {
-        importjQuery();
-        console.log("Pebble JS Ready!");
-    }
+	function(e) {
+		importjQuery();
+		console.log("Pebble JS Ready!");
+	}
 );
 
 Pebble.addEventListener("appmessage",
@@ -28,13 +28,13 @@ Pebble.addEventListener("appmessage",
 
 			//Send with jQuery
 			$.ajax({
-			  type: "POST",
-			  url: url,
-			  data: {"args":"none"},	//No args for the moment
-			  success: function() {
-			  	console.log("POST succesful!");
-			  },
-			  dataType: "json"
+				type: "POST",
+				url: url,
+				data: {"args":"none"},	//No args for the moment
+				success: function() {
+					console.log("POST succesful!");
+				},
+				dataType: "json"
 			});
 		}
 	}
