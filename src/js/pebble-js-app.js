@@ -32,7 +32,7 @@ Pebble.addEventListener("appmessage",
 				url: url,
 				data: {"args":"none"},	//No args for the moment
 				success: function() {
-					console.log("POST succesful!");
+					console.log("POST successful!");
 				},
 				dataType: "json"
 			});
